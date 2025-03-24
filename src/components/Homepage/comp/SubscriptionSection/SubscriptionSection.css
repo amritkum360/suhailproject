@@ -1,0 +1,47 @@
+.subscription-section {
+    background-color: #0f2e2c; /* Dark green */
+    padding: 50px 0;
+    color: white;
+  }
+  
+  .email-icon {
+    width: 50px; /* Adjust the icon size */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .subscription-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .subscription-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .subscription-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .subscription-form button {
+    background-color: #176e5c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .subscription-form button:hover {
+    background-color: #1f8a72;
+  }
+  

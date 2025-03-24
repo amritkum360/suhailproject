@@ -1,0 +1,17 @@
+/* Hover effect for cards */
+.course-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-10px); /* Move the card up slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+  }
+  
+  /* Style for card images */
+  .card-img-top {
+    /* height: 200px;  */
+    object-fit: cover; /* Ensure images cover the area */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }

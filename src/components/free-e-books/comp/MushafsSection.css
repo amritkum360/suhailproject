@@ -1,0 +1,50 @@
+.mushaf-card {
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .mushaf-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .quran-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-container:hover {
+    background: #198754;
+    transform: scale(1.1);
+  }
+  
+  .icon-container:hover .quran-icon {
+    transform: scale(1.2);
+    filter: brightness(0) invert(1);
+  }
+  
+  .btn-outline-success {
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #198754;
+    color: white;
+  }
+  

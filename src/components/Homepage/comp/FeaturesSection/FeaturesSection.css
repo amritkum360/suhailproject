@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+    .features-row {
+      flex-wrap: nowrap !important; /* Prevents wrapping on mobile */
+      overflow-x: auto; /* Enables horizontal scrolling if needed */
+      justify-content: flex-start; /* Aligns items properly */
+      gap: 20px; /* Adds spacing between items */
+      padding-bottom: 10px; /* Prevents clipping */
+    }
+  }
+  
+
+/* Button container for mobile */
+/* Button container for mobile */
+@media (max-width: 768px) {
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center align */
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .button-container button {
+    width: 50%; /* Each button takes 50% width */
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .book-trial-btn {
+    background-color: #c2912e !important; /* Yellow */
+    border-color: #c2912e !important;
+    color: white !important;
+  }
+
+  .view-course-btn {
+    background-color: #19473c !important; /* Green */
+    border-color: #19473c !important;
+    color: white !important;
+  }
+}
+
+
+.custom-btn-1 {
+  background: #19473c;
+  color: white;
+  padding: 10px 30px; /* Default */
+}
+
+.custom-btn-2 {
+  border: 1px solid #c2912e;
+  border-radius: 20px;
+  color: #c2912e;
+  padding: 10px 30px; /* Default */
+}
+
+/* ✅ Mobile: Reduce padding */
+@media (max-width: 768px) {
+  .custom-btn-1,
+  .custom-btn-2 {
+    padding: 5px 12px; /* Smaller padding on mobile */
+  }
+}

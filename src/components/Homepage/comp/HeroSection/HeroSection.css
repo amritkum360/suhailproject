@@ -1,0 +1,131 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 90vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  color: white;
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Background Image with Sparkle Animation */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    url("https://eilaf101.com/wp-content/uploads/2023/08/Eilaf-Banner.jpg") center/cover no-repeat, /* Main background image */
+    url("/sparkle.png"), /* Sparkle image 1 */
+    url("/sparkle.png"); /* Sparkle image 2 */
+  background-size: cover; /* Ensure the background covers the container */
+  background-repeat: no-repeat;
+  z-index: 1;
+  animation: sparkle 60s linear infinite; /* Sparkle animation */
+}
+
+/* Sparkle Animation Keyframes */
+@keyframes sparkle {
+  0% {
+    background-position: 
+      center center, /* Main background stays fixed */
+      -123.764px -247.527px, /* Sparkle 1 position */
+      -99.0109px -99.0109px; /* Sparkle 2 position */
+  }
+  25% {
+    background-position: 
+      center center, 
+      74.2582px -123.764px, 
+      -247.527px 74.2582px;
+  }
+  50% {
+    background-position: 
+      center center, 
+      -99.0109px 74.2582px, 
+      123.764px -247.527px;
+  }
+  75% {
+    background-position: 
+      center center, 
+      -247.527px -99.0109px, 
+      74.2582px 123.764px;
+  }
+  100% {
+    background-position: 
+      center center, 
+      -123.764px -247.527px, 
+      -99.0109px -99.0109px;
+  }
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Buttons */
+.book-trial-btn {
+  background-color: #144d45; /* Green */
+  color: white;
+}
+
+.book-trial-btn:hover {
+  background-color: #c2912e; /* Yellow on hover */
+}
+
+.browse-courses-btn {
+  background-color: #c2912e; /* Yellow */
+  color: white;
+}
+
+.browse-courses-btn:hover {
+  background-color: #19473c; /* Green on hover */
+}
+
+/* Right Section Image */
+.moving-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  width: 200px; /* Adjust the size of the image */
+  position: absolute; /* Position it absolutely within the container */
+  bottom: 0; /* Start from the bottom */
+  right: 0; /* Start from the right */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .hero-section {
+    align-items: flex-start; /* Align content to the top */
+    padding-top: 20px; /* Add padding at the top */
+    min-height: 90vh; /* Adjust height for mobile */
+  }
+
+  .hero-bg {
+    background-image: 
+      url("https://eilaf101.com/wp-content/uploads/2023/08/Eilaf-Banner-Mobile.jpg"), /* Mobile-specific background */
+      url("/sparkle.png"); /* Sparkle image 1 */
+    height: 90vh; /* Adjust height for mobile */
+    background-size: cover; /* Ensure the background covers the container */
+    opacity: 1; /* Ensure the background is fully visible */
+  }
+
+  .hero-content {
+    text-align: center;
+    margin-top: 20px; /* Push content down slightly */
+    padding: 20px; /* Add padding for better readability */
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  .moving-image {
+    width: 150px; /* Adjust image size for mobile */
+    position: static; /* Reset absolute positioning */
+    margin-top: 20px; /* Add space between text and image */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is treated as a block element */
+  }
+}
