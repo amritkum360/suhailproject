@@ -60,19 +60,23 @@ export default function HeroSection() {
             /> */}
             {/* Second Image */}
             <motion.img
-              src="/sparkle.png" // Replace with your image URL
-              alt="Hero Image 2"
-              className="img-fluid rounded  moving-image"
-              initial={{ x: "100%", y: "100%" }} // Start from bottom-right
-              animate={{ x: "-100%", y: "-100%" }} // Move to top-left
-              transition={{
-                duration: 20, // Animation duration
-                repeat: Infinity, // Loop infinitely
-                ease: "linear", // Smooth linear movement
-                delay: 10, // Delay to start after the first image
-              }}
-              style={{width:'1200px', marginBottom:'-20px', animation:"sparkle 60s linear infinite;"}}
-            />
+  src="/sparkle.png" // Replace with your image URL
+  alt="Hero Image 2"
+  className="img-fluid rounded moving-image"
+  initial={{ x: "-100%", y: "-100%" }} // Start from top-left
+  animate={{ x: "80%", y: "80%" }} // Move to bottom-right
+  transition={{
+    duration: 10, // Animation duration
+    repeat: Infinity, // Loop infinitely
+    ease: "linear", // Smooth linear movement
+  }}
+  style={{
+    width: "1200px",
+    marginBottom: "-20px",
+    animation: "sparkle 60s linear infinite",
+  }}
+/>
+
           </div>
         </div>
       </div>

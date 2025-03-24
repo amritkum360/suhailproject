@@ -25,7 +25,9 @@ export default function Homepage(){
         <HeroSection />
         <FeaturesSection />
         <div className="divider mx-auto" style={{background:'#c2912e', width:'100%'}}></div>
+        <Testimonials />
         <AboutSection />
+       
         <CourseSections />
         <CourseSections2 />
         <CourseSections3 />
@@ -37,7 +39,7 @@ export default function Homepage(){
         <FeaturesSection2 />
         <StepsSection />
         <AboutEilaf />
-        <Testimonials />
+        
         <ResourceSection />
         <SubscriptionSection />
         <Footer />

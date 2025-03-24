@@ -23,7 +23,71 @@ export default function CourseSections() {
   }, []);
 
   return (
+    <>
+     <div className="row bg-light" id="row-629543701">
+  <div id="col-1013642367" className="col small-12 large-12">
+    <div className="col-inner text-center">
+      <div 
+        className="button-wrapper"
+        style={{
+          display: 'inline-block',
+          position: 'relative'
+        }}
+        onMouseEnter={() => {
+          document.querySelector('.testimonial-divider').style.width = '120px';
+          document.querySelector('.testimonial-divider').style.height = '4px';
+        }}
+        onMouseLeave={() => {
+          document.querySelector('.testimonial-divider').style.width = '60px';
+          document.querySelector('.testimonial-divider').style.height = '3px';
+        }}
+      >
+        <a
+          to="/testimonial" 
+          className="button primary is-underline is-large"
+          style={{
+            display: 'inline-block',
+            padding: '15px 30px',
+            fontSize: '24px',
+            fontWeight: 'bold',
+            textDecoration: 'none',
+            color: '#006400',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            transition: 'all 0.3s ease',
+            textTransform: 'uppercase',
+            letterSpacing: '1px',
+            position: 'relative',
+            overflow: 'hidden',
+            fontWeight: '900'
+          }}
+        >
+          <span style={{ position: 'relative', zIndex: 2 }}>
+            ALL TESTIMONIALS
+          </span>
+        </a>
+        <div 
+          className="testimonial-divider mx-auto" 
+          style={{
+            background: '#c2912e',
+            width: '60px',
+            height: '3px',
+            transition: 'all 0.3s ease',
+            marginTop: '10px'
+          }}
+          onMouseEnter={() => {
+            document.querySelector('.testimonial-divider').style.width = '120px';
+            document.querySelector('.testimonial-divider').style.height = '4px';
+          }}
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
+
     <section className="py-5 bg-light" id="course-section">
+      
       <div className="container">
         <div className="row align-items-center">
           {/* Text Section */}
@@ -84,11 +148,12 @@ export default function CourseSections() {
               className="img-fluid rounded "
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isVisible ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             />
           </div>
         </div>
       </div>
     </section>
+    </>
   );
 }

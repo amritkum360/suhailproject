@@ -3,7 +3,7 @@ import { FaRegSmile, FaClock, FaUserGraduate } from "react-icons/fa";
 import "./FeaturesSection.css"
 export default function FeaturesSection() {
   return (
-    <section className="py-5 bg-dark text-light">
+    <section className="py-5 text-light" style={{ backgroundColor: "#335c54" }}>
       <div className="container">
         {/* Mobile: Horizontal row | Desktop: 3 columns */}
         <div className="d-flex flex-nowrap flex-md-wrap align-items-center justify-content-center text-center gap-1 gap-md-3">

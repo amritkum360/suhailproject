@@ -67,7 +67,7 @@ export default function CourseSections4() {
               className="lead mb-4"
               initial={{ opacity: 0, y: 50 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
               Get qualified for obtaining Ijazah in Quran Recitation with Tajweed or
               Quran Memorization (Hifz) with Ijazah certified Quran Sheikhs. At the end

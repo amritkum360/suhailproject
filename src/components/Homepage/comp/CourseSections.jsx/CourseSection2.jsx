@@ -8,6 +8,8 @@ export default function CourseSections2() {
   const [isVisible, setIsVisible] = useState(false);
 
   const navigate = useNavigate()
+
+  
   useEffect(() => {
     const handleScroll = () => {
       const section = document.getElementById("course-section-2");
@@ -30,12 +32,12 @@ export default function CourseSections2() {
           {/* Image Section - Left Side */}
           <div className="col-md-6 text-center">
             <motion.img
-              src="https://eilaf101.com/wp-content/uploads/2023/08/Learn-Quran-Recitation-with-Tajweed-Eilaf.png"
+              src="/section2.png"
               alt="Quran Reading Basics"
               className="img-fluid rounded"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isVisible ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
+              transition={{ duration: 1.2,  ease: "easeOut" }}
             />
           </div>
 
@@ -44,9 +46,9 @@ export default function CourseSections2() {
             <motion.h5
               className="fw-bold mb-3"
               style={{color:"#19473c"}}
-              initial={{ opacity: 0, y: 50 }}
-              animate={isVisible ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 1.2, ease: "easeOut" }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={isVisible ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
               Quran Recitation with <span style={{ color: "#19473c" }}>Tajweed</span> Course
             </motion.h5>

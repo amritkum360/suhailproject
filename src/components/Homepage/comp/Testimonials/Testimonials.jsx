@@ -42,7 +42,7 @@ export default function Testimonials() {
       <div className="container text-center">
         <h2 className="fw-bold mb-3">OUR STUDENTS FEEDBACK</h2>
         
-        <p className="text-muted mb-3">What do the people say about ArabicQuranTutor.com?</p>
+        <p className="text-muted mb-3">What do the people say about attarbiyahinternationalacademy.com?</p>
         <div className="divider mx-auto" style={{background:'#c2912e', marginBottom:"20px", width:'60px'}}></div>
     
         <div className="position-relative">
@@ -60,29 +60,82 @@ export default function Testimonials() {
           >
             {testimonials.map((testi) => (
               <SwiperSlide key={testi.id}>
-                <div className="bg-white p-2 shadow rounded text-center mx-auto" style={{ maxWidth: "1100px" }}>
+                <div 
+                  className="bg-white p-4 text-center mx-auto" 
+                  style={{ 
+                    maxWidth: "800px",
+                    borderRadius: "20px", // More rounded corners
+                    boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)", // Softer shadow
+                    border: "1px solid rgba(0, 0, 0, 0.05)", // Subtle border
+                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                    transform: "translateY(0)",
+                    '&:hover': {
+                      transform: "translateY(-5px)",
+                      boxShadow: "0 15px 35px rgba(0, 0, 0, 0.15)"
+                    }
+                  }}
+                >
                   <img
                     src={testi.image}
                     alt={testi.name}
                     className="rounded-circle mb-3"
                     width="100"
+                    style={{
+                      border: "3px solid #f8f9fa",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
+                    }}
                   />
-                  <div className="mb-2">
+                  <div className="mb-3">
                     {[...Array(testi.rating)].map((_, i) => (
                       <FaStar key={i} className="text-warning" size={24} />
                     ))}
                   </div>
-                  <p className="fst-italic text-muted mb-4">{testi.feedback}</p>
-                  <h6 className="fw-bold mb-1">{testi.name}</h6>
+                  <p 
+                    className="fst-italic mb-4 px-3" 
+                    style={{
+                      fontSize: "1.1rem",
+                      lineHeight: "1.6",
+                      color: "#555"
+                    }}
+                  >
+                    {testi.feedback}
+                  </p>
+                  <h6 className="fw-bold mb-1" style={{color: "#19473c"}}>{testi.name}</h6>
                   <span className="text-muted">{testi.location}</span>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-          <button className="prev-btn position-absolute top-50 start-0 translate-middle-y btn btn-light shadow-sm p-3">
+          <button 
+            className="prev-btn position-absolute top-50 start-0 translate-middle-y btn btn-light p-3" 
+            style={{
+              borderRadius: "50%",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+              backgroundColor: "white",
+              border: "none",
+              width: "50px",
+              height: "50px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
             <FaChevronLeft size={20} />
           </button>
-          <button className="next-btn position-absolute top-50 end-0 translate-middle-y btn btn-light shadow-sm p-3">
+          <button 
+            className="next-btn position-absolute top-50 end-0 translate-middle-y btn btn-light p-3" 
+            style={{
+              borderRadius: "50%",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+              backgroundColor: "white",
+              border: "none",
+              width: "50px",
+              height: "50px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
             <FaChevronRight size={20} />
           </button>
         </div>
