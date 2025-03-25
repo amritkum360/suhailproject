@@ -31,12 +31,12 @@ const WhyChooseUs = () => {
         {/* Center Logo */}
         <div className="col-md-4 text-center">
           <img
-            src="https://eilaf101.com/wp-content/uploads/2023/08/Eilaf-Institute-Logo.png"
+            src="/logo.png"
             alt="Eilaf Institute"
             className="img-fluid"
             width="180"
           />
-          <h4 className="fw-bold mt-3">EILAF INSTITUTE</h4>
+          <h4 className="fw-bold mt-3">ATIA INSTITUTE</h4>
           <p className="text-warning fw-bold">- ONLINE ARABIC & ISLAMIC STUDIES -</p>
         </div>
 

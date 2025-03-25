@@ -10,19 +10,19 @@ const AboutUs = () => {
         <div className="row align-items-center">
           {/* Left Content Section */}
           <div className="col-lg-6 order-1">
-            <h2 className="fw-bold text-dark">About <span className="text-warning">EILAF</span></h2>
+            <h2 className="fw-bold text-dark">About <span className="text-warning">ATIA</span></h2>
 
             {/* Image (Mobile: Below h2, Desktop: Right) */}
             <div className="d-block d-lg-none text-center my-3">
               <img 
                 src="/quran-2.png" 
-                alt="About EILAF" 
+                alt="About ATIA" 
                 className="img-fluid rounded"
               />
             </div>
 
             <p className="text-muted">
-              <strong>EILAF</strong> is a professional online platform to learn Quran, Arabic Language, 
+              <strong>ATIA</strong> is a professional online platform to learn Quran, Arabic Language, 
               and Islamic Studies for kids & adults through one-to-one online sessions provided by native Arab 
               male & female tutors.
             </p>
@@ -37,7 +37,7 @@ const AboutUs = () => {
               scheduled according to the convenience of the students without any hassle.
             </p>
             <p className="text-muted">
-              About Eilaf customizes courses, lessons, and teaching techniques as per student’s age, 
+              About ATIA customizes courses, lessons, and teaching techniques as per student’s age, 
               knowledge, and interests. So, no matter your level or age, you or your children can start 
               learning Quran & Arabic without any hassle.
             </p>

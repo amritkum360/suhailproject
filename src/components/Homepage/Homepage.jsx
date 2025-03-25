@@ -24,7 +24,7 @@ export default function Homepage(){
         {/* <Navbar /> */}
         <HeroSection />
         <FeaturesSection />
-        <div className="divider mx-auto" style={{background:'#c2912e', width:'100%'}}></div>
+        <div className="divider mx-auto" style={{background:'#c2912e', width:'100%', height:"10px"}}></div>
         <Testimonials />
         <AboutSection />
        

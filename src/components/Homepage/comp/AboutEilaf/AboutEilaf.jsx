@@ -6,11 +6,11 @@ const AboutEilaf = () => {
   return (
     <section className="about-section text-white text-center py-5">
       <div className="container">
-        <h2 className="fw-bold">About EILAF</h2>
+        <h2 className="fw-bold">About ATIA</h2>
         <div className="divider mx-auto mb-3"></div>
 
         <p className="">
-          <strong>EILAF</strong> is a professional online Quran & Arabic academy to{" "}
+          <strong>ATIA</strong> is a professional online Quran & Arabic academy to{" "}
           <em>learn Quran, Arabic Language</em> and <em>Islamic Studies</em> for kids & adults
           through one-to-one online classes through Zoom and Skype provided by native Egyptian
           male & female teachers.

@@ -10,9 +10,9 @@ const Footer = () => {
         <div className="row">
           {/* About Section */}
           <div className="col-md-4">
-            <h5 className="footer-title">EILAF</h5>
+            <h5 className="footer-title">ATIA</h5>
             <p className="footer-text">
-              Eilaf is a professional online platform to learn Quran, Arabic Language, and Islamic Studies 
+            ATIA is a professional online platform to learn Quran, Arabic Language, and Islamic Studies 
               for kids & adults through one-to-one online sessions provided by native Arab male & female tutors.
             </p>
           </div>
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        Copyright 2025 © <span className="footer-highlight">Eilaf</span>. All rights reserved.
+        Copyright 2025 © <span className="footer-highlight">ATIA</span>. All rights reserved.
       </div>
     </footer>
   );

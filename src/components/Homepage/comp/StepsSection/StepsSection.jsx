@@ -37,7 +37,7 @@ const StepsSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          How to Learn at EILAF in 3 Steps?
+          How to Learn at ATIA in 3 Steps?
         </motion.h2>
 
         <div className="steps-container">

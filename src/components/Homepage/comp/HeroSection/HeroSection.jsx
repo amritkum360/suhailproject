@@ -16,7 +16,7 @@ export default function HeroSection() {
             transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
           >
             <p className="text-muted mb-2 fw-semibold">
-              Learn with <span className="text-dark">EILAF</span>
+              Learn with <span className="text-dark">ATIA</span>
             </p>
             <h1 className="fw-bold display-4" style={{ color: "#19473c" }}>
               Quran. Arabic. <br /> Islamic Studies.

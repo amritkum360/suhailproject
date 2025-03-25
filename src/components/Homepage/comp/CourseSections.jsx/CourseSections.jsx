@@ -60,7 +60,8 @@ export default function CourseSections() {
             letterSpacing: '1px',
             position: 'relative',
             overflow: 'hidden',
-            fontWeight: '900'
+            fontWeight: '900',
+            marginTop:'20px'
           }}
         >
           <span style={{ position: 'relative', zIndex: 2 }}>
