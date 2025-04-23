@@ -60,50 +60,47 @@ export default function Testimonials() {
           >
             {testimonials.map((testi) => (
               <SwiperSlide key={testi.id}>
-                <div 
-                  className="bg-white p-4 text-center mx-auto" 
-                  style={{ 
-                    maxWidth: "800px",
-                    borderRadius: "20px", // More rounded corners
-                    boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)", // Softer shadow
-                    border: "1px solid rgba(0, 0, 0, 0.05)", // Subtle border
-                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                    transform: "translateY(0)",
-                    '&:hover': {
-                      transform: "translateY(-5px)",
-                      boxShadow: "0 15px 35px rgba(0, 0, 0, 0.15)"
-                    }
-                  }}
-                >
-                  <img
-                    src={testi.image}
-                    alt={testi.name}
-                    className="rounded-circle mb-3"
-                    width="100"
-                    style={{
-                      border: "3px solid #f8f9fa",
-                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
-                    }}
-                  />
-                  <div className="mb-3">
-                    {[...Array(testi.rating)].map((_, i) => (
-                      <FaStar key={i} className="text-warning" size={24} />
-                    ))}
-                  </div>
-                  <p 
-                    className="fst-italic mb-4 px-3" 
-                    style={{
-                      fontSize: "1.1rem",
-                      lineHeight: "1.6",
-                      color: "#555"
-                    }}
-                  >
-                    {testi.feedback}
-                  </p>
-                  <h6 className="fw-bold mb-1" style={{color: "#19473c"}}>{testi.name}</h6>
-                  <span className="text-muted">{testi.location}</span>
-                </div>
-              </SwiperSlide>
+  <div 
+    className="bg-white p-4 text-center mx-auto d-flex flex-column align-items-center" 
+    style={{ 
+      maxWidth: "800px",
+      borderRadius: "20px",
+      boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+      border: "1px solid rgba(0, 0, 0, 0.05)",
+      transition: "transform 0.3s ease, box-shadow 0.3s ease",
+    }}
+  >
+    <img
+      src={testi.image}
+      alt={testi.name}
+      className="rounded-circle mb-3"
+      width="100"
+      style={{
+        border: "3px solid #f8f9fa",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+        objectFit: "cover"
+      }}
+    />
+    <div className="mb-3 d-flex justify-content-center">
+  {[...Array(testi.rating)].map((_, i) => (
+    <FaStar key={i} className="text-warning mx-1" size={24} />
+  ))}
+</div>
+
+    <p 
+      className="fst-italic mb-4 px-3 text-center" 
+      style={{
+        fontSize: "1.1rem",
+        lineHeight: "1.6",
+        color: "#555"
+      }}
+    >
+      {testi.feedback}
+    </p>
+    <h6 className="fw-bold mb-1" style={{color: "#19473c"}}>{testi.name}</h6>
+    <span className="text-muted">{testi.location}</span>
+  </div>
+</SwiperSlide>
             ))}
           </Swiper>
           <button 
